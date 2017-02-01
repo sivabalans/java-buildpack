@@ -3,6 +3,6 @@ version: 1.0
 enabled: true
 jmx:
   - object_name: spring.application:type=DataSource,name=dataSource
-    metrics
+    metrics:
       - attributes: NumActive, NumIdle, MaxIdle, MaxActive
         type: simple
