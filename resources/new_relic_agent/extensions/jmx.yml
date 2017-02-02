@@ -6,3 +6,7 @@ jmx:
     metrics:
       - attributes: NumActive, NumIdle, MaxIdle, MaxActive
         type: simple
+  - object_name: java.lang:type=OperatingSystem
+    metrics:
+      - attributes: OpenFileDescriptorCount, SystemLoadAverage, ProcessCpuLoad, CommittedVirtualMemorySize, FreePhysicalMemorySize, AvailableProcessors, MaxFileDescriptorCount
+        type: simple
