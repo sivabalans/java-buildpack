@@ -102,6 +102,9 @@ common: &default_settings
   # Default is 30
   max_stack_trace_lines: 30
 
+  #New Relic support suggestion to help errors during startup
+  sync_startup: true
+
   # Provides the ability to configure the attributes sent to New Relic. These
   # attributes can be found in transaction traces, traced errors, Insight's
   # transaction events, and Insight's page views.
